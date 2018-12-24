@@ -1,0 +1,465 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Movie"
+- "MovieList"
+- "MovieParams"
+provides-nominal:
+- "12ImagineMovie0B0V"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+provides-member:
+- ["12ImagineMovie0B0V", ""]
+- ["12ImagineMovie0B0V10CodingKeysO", ""]
+- ["12ImagineMovie0B4ListV", ""]
+- ["12ImagineMovie0B4ListV10CodingKeysO", ""]
+- ["12ImagineMovie0B6ParamsV", ""]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Codable"
+- "CodingKey"
+- "FloatLiteralType"
+- "Hashable"
+- "Int"
+- "IntegerLiteralType"
+- "Movie"
+- "MovieList"
+- "MovieParams"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["12ImagineMovie0B0V10CodingKeysO", "RawValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "RawValue"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "RawValue"]
+- ["12ImagineMovie0B0V10CodingKeysO", "_Default_RawValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "_Default_RawValue"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "_Default_RawValue"]
+- !private ["12ImagineMovie0B0V10CodingKeysO", "_findStringSwitchCase"]
+- !private ["12ImagineMovie0B4ListV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["12ImagineMovie0B6ParamsV10CodingKeysO", "_findStringSwitchCase"]
+- ["12ImagineMovie0B0V10CodingKeysO", "cinemaId"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "cinemaId"]
+- ["12ImagineMovie0B0V10CodingKeysO", "debugDescription"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "debugDescription"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "debugDescription"]
+- ["12ImagineMovie0B0V10CodingKeysO", "deinit"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "deinit"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "deinit"]
+- ["12ImagineMovie0B0V10CodingKeysO", "description"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "description"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "description"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "deviceId"]
+- ["12ImagineMovie0B0V10CodingKeysO", "hasFutureSessions"]
+- ["12ImagineMovie0B0V10CodingKeysO", "hash"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "hash"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "hash"]
+- ["12ImagineMovie0B0V10CodingKeysO", "hashValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "hashValue"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "hashValue"]
+- ["12ImagineMovie0B0V10CodingKeysO", "id"]
+- ["12ImagineMovie0B0V10CodingKeysO", "init"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "init"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "init"]
+- !private ["12ImagineMovie0B0V10CodingKeysO", "init"]
+- !private ["12ImagineMovie0B4ListV10CodingKeysO", "init"]
+- !private ["12ImagineMovie0B6ParamsV10CodingKeysO", "init"]
+- ["12ImagineMovie0B0V10CodingKeysO", "intValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "intValue"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "intValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "movieList"]
+- ["12ImagineMovie0B0V10CodingKeysO", "rawValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "rawValue"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "rawValue"]
+- ["12ImagineMovie0B0V10CodingKeysO", "schedulededFilmId"]
+- ["12ImagineMovie0B0V10CodingKeysO", "stringValue"]
+- ["12ImagineMovie0B4ListV10CodingKeysO", "stringValue"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "stringValue"]
+- ["12ImagineMovie0B0V10CodingKeysO", "synopsis"]
+- ["12ImagineMovie0B0V10CodingKeysO", "synopsisAlt"]
+- ["12ImagineMovie0B0V10CodingKeysO", "title"]
+- ["12ImagineMovie0B0V10CodingKeysO", "trailerUrl"]
+- ["12ImagineMovie0B6ParamsV10CodingKeysO", "userId"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "cinemaId"]
+- !private ["Se", "deviceId"]
+- ["Se", "encode"]
+- !private ["Se", "hasFutureSessions"]
+- ["Se", "hash"]
+- ["Se", "hashValue"]
+- !private ["Se", "id"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "movieList"]
+- !private ["Se", "schedulededFilmId"]
+- !private ["Se", "synopsis"]
+- !private ["Se", "synopsisAlt"]
+- !private ["Se", "title"]
+- !private ["Se", "trailerUrl"]
+- !private ["Se", "userId"]
+- !private ["s7DecoderP", "container"]
+- ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "cinemaId"]
+- !private ["SE", "deviceId"]
+- ["SE", "encode"]
+- !private ["SE", "hasFutureSessions"]
+- ["SE", "hash"]
+- ["SE", "hashValue"]
+- !private ["SE", "id"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "movieList"]
+- !private ["SE", "schedulededFilmId"]
+- !private ["SE", "synopsis"]
+- !private ["SE", "synopsisAlt"]
+- !private ["SE", "title"]
+- !private ["SE", "trailerUrl"]
+- !private ["SE", "userId"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "cinemaId"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- !private ["SQ", "deviceId"]
+- ["SQ", "encode"]
+- !private ["SQ", "hasFutureSessions"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "id"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- !private ["SQ", "movieList"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "schedulededFilmId"]
+- ["SQ", "stringValue"]
+- !private ["SQ", "synopsis"]
+- !private ["SQ", "synopsisAlt"]
+- !private ["SQ", "title"]
+- !private ["SQ", "trailerUrl"]
+- !private ["SQ", "userId"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "cinemaId"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- !private ["SH", "deviceId"]
+- ["SH", "encode"]
+- !private ["SH", "hasFutureSessions"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "id"]
+- ["SH", "init"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- !private ["SH", "movieList"]
+- ["SH", "rawValue"]
+- !private ["SH", "schedulededFilmId"]
+- ["SH", "stringValue"]
+- !private ["SH", "synopsis"]
+- !private ["SH", "synopsisAlt"]
+- !private ["SH", "title"]
+- !private ["SH", "trailerUrl"]
+- !private ["SH", "userId"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["12ImagineMovie0B0V", "Bool"]
+- ["12ImagineMovie0B0V", "CodingKey"]
+- ["12ImagineMovie0B0V", "CodingKeys"]
+- ["12ImagineMovie0B0V", "String"]
+- ["12ImagineMovie0B0V", "__derived_struct_equals"]
+- !private ["12ImagineMovie0B0V", "_findStringSwitchCase"]
+- ["12ImagineMovie0B0V", "cinemaId"]
+- ["12ImagineMovie0B0V", "deinit"]
+- ["12ImagineMovie0B0V", "encode"]
+- ["12ImagineMovie0B0V", "hasFutureSessions"]
+- ["12ImagineMovie0B0V", "hash"]
+- ["12ImagineMovie0B0V", "hashValue"]
+- ["12ImagineMovie0B0V", "id"]
+- ["12ImagineMovie0B0V", "init"]
+- ["12ImagineMovie0B0V", "schedulededFilmId"]
+- ["12ImagineMovie0B0V", "synopsis"]
+- ["12ImagineMovie0B0V", "synopsisAlt"]
+- ["12ImagineMovie0B0V", "title"]
+- ["12ImagineMovie0B0V", "trailerUrl"]
+- ["12ImagineMovie0B4ListV", "CodingKey"]
+- ["12ImagineMovie0B4ListV", "CodingKeys"]
+- ["12ImagineMovie0B4ListV", "Movie"]
+- ["12ImagineMovie0B4ListV", "String"]
+- ["12ImagineMovie0B4ListV", "__derived_struct_equals"]
+- !private ["12ImagineMovie0B4ListV", "_findStringSwitchCase"]
+- ["12ImagineMovie0B4ListV", "deinit"]
+- ["12ImagineMovie0B4ListV", "encode"]
+- ["12ImagineMovie0B4ListV", "hash"]
+- ["12ImagineMovie0B4ListV", "hashValue"]
+- ["12ImagineMovie0B4ListV", "init"]
+- ["12ImagineMovie0B4ListV", "movieList"]
+- ["12ImagineMovie0B6ParamsV", "CodingKey"]
+- ["12ImagineMovie0B6ParamsV", "CodingKeys"]
+- ["12ImagineMovie0B6ParamsV", "Int"]
+- ["12ImagineMovie0B6ParamsV", "String"]
+- ["12ImagineMovie0B6ParamsV", "__derived_struct_equals"]
+- !private ["12ImagineMovie0B6ParamsV", "_findStringSwitchCase"]
+- ["12ImagineMovie0B6ParamsV", "cinemaId"]
+- ["12ImagineMovie0B6ParamsV", "deinit"]
+- ["12ImagineMovie0B6ParamsV", "deviceId"]
+- ["12ImagineMovie0B6ParamsV", "encode"]
+- ["12ImagineMovie0B6ParamsV", "hash"]
+- ["12ImagineMovie0B6ParamsV", "hashValue"]
+- ["12ImagineMovie0B6ParamsV", "init"]
+- ["12ImagineMovie0B6ParamsV", "userId"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- !private ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- "s9CodingKeyP"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- !private "12ImagineMovie0B0V10CodingKeysO"
+- !private "12ImagineMovie0B4ListV10CodingKeysO"
+- !private "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- !private "12ImagineMovie0B0V10CodingKeysO"
+- !private "12ImagineMovie0B4ListV10CodingKeysO"
+- !private "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B4ListV10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "12ImagineMovie0B0V10CodingKeysO"
+- "12ImagineMovie0B6ParamsV10CodingKeysO"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "SE"
+- !private "s7EncoderP"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "12ImagineMovie0B0V"
+- "12ImagineMovie0B4ListV"
+- "12ImagineMovie0B6ParamsV"
+- "Sm"
+- "SY"
+- "ST"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d4a4314d5b0c984700521610e06d9d6c"

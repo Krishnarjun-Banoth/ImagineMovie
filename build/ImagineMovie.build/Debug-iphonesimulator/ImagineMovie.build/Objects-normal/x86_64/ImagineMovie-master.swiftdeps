@@ -1,0 +1,18 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "d77d4f7bfd10d2175348f1b2c07050c3"
+build_time: [1545585977, 358637000]
+inputs:
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/ContentViewController.swift": [1545585977, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/Cells/InTheaterCollectionViewCell.swift": [1545583692, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/Cells/NewReleaseCollectionViewCell.swift": [1545559210, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/Model/DataProvider.swift": [1545585977, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/UserViewController.swift": [1545550030, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/ComingSoonViewController.swift": [1545578791, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/CinemaViewController.swift": [1545583957, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/AppDelegate.swift": [1545573723, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/Cells/PopularTableViewCell.swift": [1545582647, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/HomeViewController.swift": [1545585977, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/Model/Movie.swift": [1545575978, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/CommunicationModule/WebAPI.swift": [1545585977, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/Model/Constants.swift": [1545574878, 0]
+  "/Users/admin/Desktop/krishnarjun/ImagineMovie/ImagineMovie/LoyaltyViewController.swift": [1545578895, 0]
