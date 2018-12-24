@@ -9,35 +9,15 @@
 import UIKit
 
 class InTheaterCollectionViewCell: UICollectionViewCell {
-    
-    
+  
     @IBOutlet weak var inTheaterPoster: UIImageView!
-    
-    
+  
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-      
-        
     }
-    
   
-    
-    
     func configure(with inTheaterMovie: Movie) {
-       
-        let posterUrl = Constants.imageBaseUrl + inTheaterMovie.schedulededFilmId
-        if let imgUrl = URL(string: posterUrl) {
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: imgUrl)
-                if let data = data {
-                    let img = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        self.inTheaterPoster.image = img
-                    }
-                }
-            }
-            
-        }
+      let posterUrl = Constants.imageBaseUrl + inTheaterMovie.schedulededFilmId
+      inTheaterPoster.cacheImage(urlString: posterUrl)
     }
 }

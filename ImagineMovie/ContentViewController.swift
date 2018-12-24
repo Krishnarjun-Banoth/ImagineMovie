@@ -17,20 +17,10 @@ class ContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let currentImage = imageName {
-            if let imgUrl = URL(string: currentImage) {
-                DispatchQueue.global().async {
-                    let data = try? Data(contentsOf: imgUrl)
-                    if let data = data {
-                        let img = UIImage(data: data)
-                        DispatchQueue.main.async {
-                            self.imageView.image = img
-                        }
-                    }
-                }
-                
-            }
-        }
+      guard let currentImageUrl = imageName else{
+        return
+      }
+      imageView.cacheImage(urlString: currentImageUrl)
     }
 
 }

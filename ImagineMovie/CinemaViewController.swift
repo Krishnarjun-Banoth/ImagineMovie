@@ -24,17 +24,16 @@ class CinemaViewController: UIViewController {
         popularMovies = Array(DataProvider.shared.comingSoonMovies)
         NotificationCenter.default.addObserver(self, selector: #selector(updateMoviesInfo), name: .didCompletedMoviesDownload, object: nil)
     }
-    
-
+  
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent // .default
+        return .lightContent 
     }
+  
     @objc func updateMoviesInfo(){
         popularMovies = Array(DataProvider.shared.comingSoonMovies)
         moviesInTheaters = Array(DataProvider.shared.inTheatresMovies)
         self.tableView.reloadData()
     }
-
 }
 // MARK: - Table View Methods
 extension CinemaViewController: UITableViewDataSource, UITableViewDelegate{
@@ -43,13 +42,11 @@ extension CinemaViewController: UITableViewDataSource, UITableViewDelegate{
         return 1
     }
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return popularMovies.count
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "popularCell", for: indexPath) as! PopularTableViewCell
-        
         let movie = popularMovies[indexPath.row]
         cell.configure(with: movie)
         return cell
@@ -67,7 +64,6 @@ extension CinemaViewController :UICollectionViewDataSource,UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "inTheaterCell", for: indexPath) as!InTheaterCollectionViewCell
-        
         let movie = moviesInTheaters[indexPath.row]
         cell.configure(with: movie)
         

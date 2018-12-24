@@ -18,20 +18,17 @@ class HomeViewController: UIViewController {
     var pageViewController: UIPageViewController?
     var newReleaseMovies = ["img1","img2","img3"]
     var featuredMovies = ["img1"]
+    var featuredMoviesPosters = [UIImage]()
     var pendingIndex : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+      
         self.pageControl.numberOfPages = featuredMovies.count
         createPageViewController()
-        
         collectionView.dataSource = self
         collectionView.delegate = self
-        
         NotificationCenter.default.addObserver(self, selector: #selector(updateMoviesInfo), name: .didCompletedMoviesDownload, object: nil)
-        
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -39,38 +36,52 @@ class HomeViewController: UIViewController {
     }
     
     @objc func updateMoviesInfo(){
-        featuredMovies = [String]()
         if isComingSoonSelected{
-            featuredMovies = DataProvider.shared.comingSoonMovies.map({Constants.imageBaseUrl + $0.schedulededFilmId})
+          let mostRelatedComingSoonMovies = Array(DataProvider.shared.comingSoonMovies)
+          if mostRelatedComingSoonMovies.count >= 3{
+            featuredMovies = mostRelatedComingSoonMovies[0...2].map({Constants.imageBaseUrl + $0.schedulededFilmId}) //To select most relavant 3 urls
+          }
+          else{
+            featuredMovies = mostRelatedComingSoonMovies.map({Constants.imageBaseUrl + $0.schedulededFilmId})
+          }
         }
         else{
-            featuredMovies = DataProvider.shared.inTheatresMovies.map({Constants.imageBaseUrl + $0.schedulededFilmId})
+          let mostRelatedInTheatersMovies = Array(DataProvider.shared.inTheatresMovies)
+          if mostRelatedInTheatersMovies.count >= 3{
+            featuredMovies = mostRelatedInTheatersMovies[0...2].map({Constants.imageBaseUrl + $0.schedulededFilmId})//To select most relavant 3 urls
+          }
+          else{
+            featuredMovies = mostRelatedInTheatersMovies.map({Constants.imageBaseUrl + $0.schedulededFilmId})
+          }
         }
-        self.pageControl.numberOfPages = featuredMovies.count
+      
+      self.pageControl.numberOfPages = featuredMovies.count
+      for posterUrl in featuredMovies{
+         WebAPI.shared.getImage(with: posterUrl, completion: {rawImage in
+          DispatchQueue.main.async {
+            self.featuredMoviesPosters.append(rawImage)
+          }
+        })
+      }
+        createPageViewController()
     }
 
     
     @IBAction func scUserChoice(_ sender: Any) {
-        
-        featuredMovies = [String]()
         let getIndex = selectionSegment.selectedSegmentIndex
         switch (getIndex) {
         case 0:
             isComingSoonSelected = false
-            featuredMovies = DataProvider.shared.comingSoonMovies.map({Constants.imageBaseUrl + $0.schedulededFilmId})
-            
         case 1:
             isComingSoonSelected = true
-            featuredMovies = DataProvider.shared.inTheatresMovies.map({Constants.imageBaseUrl + $0.schedulededFilmId})
         default:
             print("No Selection")
         }
-        self.pageControl.numberOfPages = featuredMovies.count
+        updateMoviesInfo()
     }
-    
 }
 
-
+//MARK: Collection View Methods
 extension HomeViewController :UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return newReleaseMovies.count
@@ -112,7 +123,6 @@ extension HomeViewController{
         let pageVc = self.storyboard?.instantiateViewController(withIdentifier: "pageVC") as! UIPageViewController
         pageVc.dataSource = self
         pageVc.delegate =  self
-        
         if featuredMovies.count > 0 {
             let contentController = getContentViewController(withIndex: 0)!
             let contentControllers = [contentController]
@@ -123,19 +133,17 @@ extension HomeViewController{
         pageViewController?.view.contentMode = .scaleToFill
         pageViewController?.view.frame = CGRect(x: self.swipeView.frame.origin.x, y: self.swipeView.frame.origin.y, width: self.swipeView.frame.width, height: self.swipeView.frame.height)
         
-        
-        
         self.addChild(pageViewController!)
         self.view.addSubview(pageViewController!.view)
         pageViewController?.didMove(toParent: self)
         
     }
 }
+//MARK: PageView Controller Datasource and Delegate methods
 extension HomeViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let contentVC = viewController as! ContentViewController
-        
         if contentVC.itemIndex > 0 {
             return getContentViewController(withIndex: contentVC.itemIndex - 1)
         }
@@ -153,7 +161,6 @@ extension HomeViewController: UIPageViewControllerDataSource, UIPageViewControll
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         
         pendingIndex = (pendingViewControllers.first as! ContentViewController).itemIndex
-        
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
@@ -164,6 +171,5 @@ extension HomeViewController: UIPageViewControllerDataSource, UIPageViewControll
             }
         }
     }
-    
 }
 

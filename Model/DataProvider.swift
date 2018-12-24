@@ -19,5 +19,6 @@ class DataProvider {
 
     var comingSoonMovies = Set<Movie>()
     var inTheatresMovies = Set<Movie>()
+    
    
 }

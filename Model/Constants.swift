@@ -9,8 +9,9 @@
 import Foundation
 
 
+
 enum Constants {
-    static let publishableKey = "YOUR_TEST_PUBLISHABLE_KEY"
+    static let accessToken = "1536898194"
     static let baseURLString = "http://devemagine.thetunagroup.com/emagine3/api/"
     static let nowShowingURLString = Constants.baseURLString + "getMovieListAll"
     static let comingSoonURLString = Constants.baseURLString + "getComingSoon"
